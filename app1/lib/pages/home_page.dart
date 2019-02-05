@@ -2,6 +2,8 @@ import "package:flutter/material.dart";
 import './test1_page.dart';
 import './test2_page.dart';
 import './test3_page.dart';
+import './todolist.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class HomePage extends StatelessWidget {
                   title:Text("TODO List"),
                   onTap: (){
                     Navigator.of(context).pop();
-                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext){ return Test4Page();}));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext){ return TodoList();}));
                   }
                 )
               ],
