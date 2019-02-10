@@ -12,16 +12,17 @@ import 'package:flutter/material.dart';
 
 
 //sqlfire mvp
-import 'package:app1/mvp/pages/home_page.dart';
+// import 'package:app1/mvp/pages/home_page.dart';
 import 'package:app1/mvp/pages/login/login_page.dart';
+import 'package:app1/pages/home_page.dart';
 void main() => runApp(MyApp());
 
 //定义好路由
-final routes = {
-  '/home':(BuildContext context) => new HomePage(),
-  '/login':(BuildContext context)=> new LoginPage(),
-  '/':(BuildContext context) => new LoginPage()
-};
+// final routes = {
+//   '/home':(BuildContext context) => new HomePage(),
+//   '/login':(BuildContext context)=> new LoginPage(),
+//   '/':(BuildContext context) => new LoginPage()
+// };
 
 class MyApp extends StatelessWidget {
   @override
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.teal,
       ),
-      routes: routes,
+      // routes: routes,
+      home: HomePage(),
     );
   }
 }

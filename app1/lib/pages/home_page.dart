@@ -3,6 +3,9 @@ import './test1_page.dart';
 import './test2_page.dart';
 import './test3_page.dart';
 import './todolist.dart';
+import "package:app1/pages/listview_article.dart";
+import "package:app1/pages/httppage.dart";
+import "package:app1/pages/diopage.dart";
 
 class HomePage extends StatelessWidget {
   @override
@@ -40,6 +43,27 @@ class HomePage extends StatelessWidget {
                     Navigator.of(context).pop();
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext){ return TodoList();}));
                   }
+                ),
+                ListTile(
+                  title: Text("List View Article"),
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext){ return ListViewArticle();}));
+                  },  
+                ),
+                ListTile(
+                  title: Text("测试http抓取数据包括加载"),
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context){ return HttpPage();}));
+                  },
+                ),
+                 ListTile(
+                  title: Text("测试dio抓取数据包括加载"),
+                  onTap: (){
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context){ return DioPage();}));
+                  },
                 )
               ],
             ),
