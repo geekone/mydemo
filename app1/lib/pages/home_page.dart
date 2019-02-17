@@ -6,6 +6,8 @@ import './todolist.dart';
 import "package:app1/pages/listview_article.dart";
 import "package:app1/pages/httppage.dart";
 import "package:app1/pages/diopage.dart";
+import "package:app1/pages/win113/win_home.dart";       //win113.com的一些页面
+import "package:app1/pages/marquee_page.dart";
 
 class HomePage extends StatelessWidget {
   @override
@@ -64,7 +66,21 @@ class HomePage extends StatelessWidget {
                     Navigator.of(context).pop();
                     Navigator.of(context).push(MaterialPageRoute(builder: (context){ return DioPage();}));
                   },
-                )
+                ),
+                ListTile(
+                    title:Text("win113的页面"),
+                    onTap: (){
+                      Navigator.of(context).pop();
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context){return WinHome();}));
+                    },
+                ),
+                ListTile(
+                  title: Text("跑马灯"),
+                  onTap: (){
+                      Navigator.of(context).pop();
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context){return MarqueePage();}));
+                  },
+                ),
               ],
             ),
           ),
