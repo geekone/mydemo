@@ -28,6 +28,10 @@ sqflite https://pub.dartlang.org/packages/sqflite
 http https://pub.dartlang.org/packages/http
 
 
+url_launcher https://pub.dartlang.org/packages/url_launcher
+
+shared_preferences https://pub.dartlang.org/packages/shared_preferences
+
 dependencies:
   flutter:
     sdk: flutter
