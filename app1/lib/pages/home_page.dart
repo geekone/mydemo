@@ -6,6 +6,7 @@ import './todolist.dart';
 import "package:app1/pages/listview_article.dart";
 import "package:app1/pages/httppage.dart";
 import "package:app1/pages/diopage.dart";
+import "package:app1/pages/wintabpage.dart";
 
 class HomePage extends StatelessWidget {
   @override
@@ -17,6 +18,14 @@ class HomePage extends StatelessWidget {
           drawer: Drawer(
             child: ListView(
               children: <Widget>[
+                ListTile(
+                  title: Text("Win113"),
+                  subtitle: Text("win113的api"),
+                  onTap:(){
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context){ return WintabPage();}));
+                  }
+                ),
                 ListTile(
                   title: Text("测试Flex布局"),
                   onTap: (){
