@@ -6,12 +6,12 @@ import './todolist.dart';
 import "package:app1/pages/listview_article.dart";
 import "package:app1/pages/httppage.dart";
 import "package:app1/pages/diopage.dart";
-<<<<<<< HEAD
+
 import "package:app1/pages/win113/win_home.dart";       //win113.com的一些页面
 import "package:app1/pages/marquee_page.dart";
-=======
+
 import "package:app1/pages/wintabpage.dart";
->>>>>>> local
+
 
 class HomePage extends StatelessWidget {
   @override
