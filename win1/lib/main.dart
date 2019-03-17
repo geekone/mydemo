@@ -1,22 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:win1/view/page/MainPage.dart';
+
+
+
+/*********  这个项目 参考的是 拓意阅读 **********/
+// import 'package:win1/view/page/MainPage.dart';
+
+// void main() => runApp(MyApp());
+
+// class MyApp extends StatelessWidget {
+
+//   //TODO store
+
+//   @override
+//   Widget build(BuildContext context) {
+//     //TODO store
+//     return MaterialApp(
+//       title: 'Win7',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: MainPage(),
+//     );
+//   }
+// }
+
+
+/*********  这个项目 参考的是 flutter_zhihu **********/
+
+import 'package:win1/zhihu/home/home_page.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-  //TODO store
-
   @override
   Widget build(BuildContext context) {
-    //TODO store
     return MaterialApp(
-      title: 'Win7',
+      title: 'ZhiHu',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.white,
+//        primarySwatch: Colors.blue,
       ),
-      home: MainPage(),
+      home: HomePage(),
     );
   }
 }
-
