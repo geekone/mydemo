@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //包的的应用部分 
 import 'package:air1/pages/shared.dart';
+import 'package:air1/pages/diopage.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +38,14 @@ class HomePage extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(builder: (context){ return SharedPage(title: 'Shared存储');}));
+              },
+            ),
+            ListTile(
+              title: Text('Dio封装测试'),
+              trailing: Icon(Icons.arrow_right,color: Colors.red),
+              onTap: (){
+                Navigator.of(context).pop();
+                Navigator.of(context).push(MaterialPageRoute(builder: (context){ return DioPage(title: 'Dio封装测试');}));
               },
             ),
           ],
